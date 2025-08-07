@@ -21,7 +21,7 @@ export default function Principal({ navigation }) {
                 <>
                     <View style={estilos.fundo} />
                     <View style={estilos.imagemArea}>
-                        <Image source={{ uri: 'https://avatars.githubusercontent.com/u/125823124?v=4' }} style={estilos.imagem} />
+                        <Image source={{ uri: 'https://avatars.githubusercontent.com/u/149601081?v=4' }} style={estilos.imagem} />
                     </View>
                     <Text style={estilos.textoNome}>Nome do usuario</Text>
                     <Text style={estilos.textoEmail}>Email do usuario</Text>
