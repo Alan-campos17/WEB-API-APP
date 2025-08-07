@@ -1,10 +1,19 @@
 import React, { useState } from 'react';
 import { Text, View, Image, TouchableOpacity, TextInput, Alert, ScrollView } from 'react-native';
 import estilos from './estilos';
+import api from  '../../servicos/api';
 
 export default function Principal({ navigation }) {
     const [nomeUsuario, setNomeUsuario] = useState('');
     const [usuario, setUsuario] = useState({});
+
+    function  Busca() {
+    api.get('/users')
+    .then(response => { console.log(response.data)
+    })
+    .catch(error => { console.log(error)
+    })
+}
 
     return (
         <ScrollView>
