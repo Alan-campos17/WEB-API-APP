@@ -48,11 +48,10 @@ export default function Principal({ navigation }) {
                     style={estilos.entrada}
                 />
 
-                <TouchableOpacity style={estilos.botao}>
-                    <Text style={estilos.textoBotao}>
-                        Buscar
-                    </Text>
-                </TouchableOpacity>
+               <TouchableOpacity style={estilos.botao}
+                onPress={() =>  Busca()}> 
+                <Text>Buscar</Text>
+               </TouchableOpacity>
             </View>
         </ScrollView>
     );
