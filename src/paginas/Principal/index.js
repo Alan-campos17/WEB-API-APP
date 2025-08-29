@@ -18,10 +18,11 @@ export default function Principal({ navigation }) {
     return (
         <ScrollView>
             <View style={estilos.container}>
+                {usuario.login &&
                 <>
                     <View style={estilos.fundo} />
                     <View style={estilos.imagemArea}>
-                        <Image source={{ uri: 'https://avatars.githubusercontent.com/u/149601081?v=4' }} style={estilos.imagem} />
+                        <Image source={{ uri: usuario.avatar_url }} style={estilos.imagem} />
                     </View>
                     <Text style={estilos.textoNome}>Nome do usuario</Text>
                     <Text style={estilos.textoEmail}>Email do usuario</Text>
@@ -40,6 +41,7 @@ export default function Principal({ navigation }) {
                             Ver os repositórios
                         </Text>
                     </TouchableOpacity>
+                }
                 </>
 
                 <TextInput
